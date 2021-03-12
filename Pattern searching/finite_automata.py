@@ -7,7 +7,6 @@ def finite_automata_search(text,pattern):
 	out = []
 	q = 0
 	for s in range(0,len(text)):
-		print(delta)
 		q = delta[q].get(text[s])
 		if not q:
 			q = 0
@@ -30,6 +29,9 @@ def build_automata(pattern):
 					break
 			result[q][a] = k    
 	return result
+
+
+
 
     
 
